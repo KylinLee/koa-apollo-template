@@ -19,4 +19,4 @@
 `views`：视图模板
 
 ## 模板教程
-[我的博客](https://kylin.dev/2020/07/07/Apollo-GraphQL%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/)
+[我的博客](https://kylin.dev/2020/07/07/Apollo-GraphQL%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/#%E4%BD%BF%E7%94%A8-MySQL-%E4%BD%9C%E4%B8%BA%E6%95%B0%E6%8D%AE%E6%BA%90)
