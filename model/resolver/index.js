@@ -1,7 +1,7 @@
-const books = require("../../data/index.js");
+const booksData = require("../../data/index.js");
 const resolvers = {
     Query: {
-        books: () => books,
-    },
-};
+        books: () => booksData
+    }
+}
 module.exports = resolvers;

@@ -8,4 +8,4 @@ const books = [
         author: "Michael Crichton",
     },
 ];
-module.export = books;
+module.exports = books;
