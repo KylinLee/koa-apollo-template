@@ -11,6 +11,8 @@ const debug = require('debug')('demo:server');
 const { ApolloServer } = require("apollo-server-koa");
 const typeDefs = require("../model/schema/index.js");
 const resolvers = require("../model/resolver/index.js");
+// 引入数据源
+const db = require("../data/mysql.config.js");
 
 /**
  * Get port from environment and store in Express.
@@ -26,6 +28,15 @@ const port = normalizePort(process.env.PORT || '3000');
 const server = new ApolloServer({
     typeDefs,
     resolvers,
+    dataSources: () => ({ db }),
+    context: (app) => {
+        const method = app.ctx.method;
+        return {
+            method,
+            uid: "20202020",
+        };
+    },
+    tracing: true,
 });
 
 /* apply server as middleware */
